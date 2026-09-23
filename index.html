@@ -47,9 +47,9 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
 <!-- CSS -->
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
 
-<link rel="stylesheet" href="responsive.css">
+<link rel="stylesheet" href="css/responsive.css">
 
 
 
@@ -71,7 +71,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
 "url":"https://newmedical.com",
 
-"telephone":"+201000000000",
+"telephone":"+201004893388",
 
 "address":{
 
@@ -117,11 +117,11 @@ href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
 <a class="logo" href="#">
 
-<i class="fa-solid fa-heart-pulse"></i>
+<img loading="lazy"
+src="assets/Medical logo.png" width="70" height="70"
+alt="New Medical Logo">
 
-<span>
-NEW MEDICAL
-</span>
+
 
 </a>
 
@@ -204,7 +204,7 @@ NEW MEDICAL
 
 
 <img loading="lazy"
-src="images/hero-medical-1.jpg"
+src="assets/new medical cover.jpeg"
 alt="Medical Products">
 
 
@@ -250,7 +250,7 @@ class="btn">
 
 
 <img loading="lazy"
-src="images/hero-medical-2.jpg"
+src="assets/new medical cover 2.jpeg"
 alt="Medical Equipment">
 
 
@@ -344,8 +344,8 @@ id="products">
 
 
 <img loading="lazy"
-src="images/products/pressure.jpg"
-alt="جهاز قياس الضغط">
+src="assets/سرير كشف طبي 4 ارجل.webp"
+alt="سرير كشف طبي 4 ارجل">
 
 
 <div class="product-info">
@@ -353,7 +353,7 @@ alt="جهاز قياس الضغط">
 
 <h3>
 
-جهاز قياس الضغط
+سرير كشف طبي 4 ارجل
 
 </h3>
 
@@ -367,7 +367,7 @@ alt="جهاز قياس الضغط">
 
 <span>
 
-450 جنيه
+2160 جنيه
 
 </span>
 
@@ -385,50 +385,6 @@ alt="جهاز قياس الضغط">
 </div>
 
 
-<div class="product-card">
-
-
-<img loading="lazy"
-src="images/products/pressure.jpg"
-alt="جهاز قياس الضغط">
-
-
-<div class="product-info">
-
-
-<h3>
-
-جهاز قياس الضغط
-
-</h3>
-
-
-<p>
-
-جهاز دقيق وسهل الاستخدام للمنزل
-
-</p>
-
-
-<span>
-
-450 جنيه
-
-</span>
-
-
-<a class="product-btn">
-
-اطلب الآن
-
-</a>
-
-
-</div>
-
-
-</div>
-  
 
 <!-- سيتم تكرار الكروت حتى 20 منتج -->
 
@@ -935,7 +891,7 @@ href="images/hero/hero-1.webp">
 
 "@type":"ContactPoint",
 
-"telephone":"+201000000000",
+"telephone":"+201004893388",
 
 "contactType":"customer service"
 
@@ -1005,6 +961,54 @@ href="images/hero/hero-1.webp">
 }
 
 </script>
+
+
+<!-- ================= PROMOTIONAL BANNER (FIXED BOTTOM) ================= -->
+
+<section class="promo-banner" id="promoBanner">
+	
+	<button class="promo-banner-close" onclick="closeBanner()">
+		<i class="fa-solid fa-xmark"></i>
+	</button>
+
+	<div class="container">
+		<div class="promo-content">
+			<div class="promo-item">
+				<div class="promo-icon">
+					<i class="fa-solid fa-percentage"></i>
+				</div>
+				<div class="promo-text">
+					<h3>خصم 10%</h3>
+					<p>على جميع المنتجات</p>
+				</div>
+			</div>
+
+			<div class="promo-divider"></div>
+
+			<div class="promo-item">
+				<div class="promo-icon">
+					<i class="fa-solid fa-shield-halved"></i>
+				</div>
+				<div class="promo-text">
+					<h3>ضمان سنة كاملة</h3>
+					<p>على جميع المنتجات</p>
+				</div>
+			</div>
+
+			<div class="promo-divider"></div>
+
+			<div class="promo-item">
+				<div class="promo-icon">
+					<i class="fa-solid fa-truck"></i>
+				</div>
+				<div class="promo-text">
+					<h3>توصيل سريع</h3>
+					<p>إلى جميع أنحاء مصر</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 
 <!-- ================= FOOTER ================= -->
@@ -1177,7 +1181,7 @@ NEW MEDICAL
 
 <i class="fa-solid fa-phone"></i>
 
-01000000000
+01004893388
 
 </p>
 
@@ -1195,7 +1199,7 @@ info@newmedical.com
 
 <i class="fa-solid fa-location-dot"></i>
 
-القاهرة - مصر
+المجمع الصناعى بهو - الوحدة 37 - نجع حمادى - قنا
 
 </p>
 
@@ -1220,8 +1224,7 @@ info@newmedical.com
 
 
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d747.9798369328721!2d32.240767!3d26.0433008!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1448d120d01e7b05%3A0x6ab706b22039510b!2z2YXYrdi32Kkg2YLYt9in2LHYp9iqINmG2KzYuSDYrdmF2KfYr9mK!5e1!3m2!1sar!2seg!4v1786070776159!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-
+<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2836.516027918769!2d32.32410957540531!3d25.906631877261084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDU0JzIzLjkiTiAzMsKwMTknMzYuMSJF!5e1!3m2!1sen!2ssa!4v1789926243250!5m2!1sen!2ssa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
 </div>
 
@@ -1261,7 +1264,7 @@ info@newmedical.com
 <!-- ================= WHATSAPP ================= -->
 
 
-<a href="https://wa.me/201000000000"
+<a href="https://wa.me/201004893388"
 
 class="whatsapp"
 
@@ -1282,9 +1285,9 @@ target="_blank">
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<script src="products.js"></script>
+<script src="js/products.js"></script>
 
-<script src="app.js"></script>
+<script src="js/app.js"></script>
 
 
 </body>

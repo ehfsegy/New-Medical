@@ -11,6 +11,107 @@ document.addEventListener("DOMContentLoaded",()=>{
 
 
 /* =====================================
+   PROMO BANNER ANIMATION
+===================================== */
+
+
+const promoItems =
+document.querySelectorAll(".promo-item");
+
+
+
+promoItems.forEach((item,index)=>{
+
+    item.style.opacity="0";
+
+    item.style.transform="translateY(30px)";
+
+    
+
+    setTimeout(()=>{
+
+        item.style.opacity="1";
+
+        item.style.transform="translateY(0)";
+
+        item.style.transition=`.8s ease`;
+
+    },index * 150);
+
+});
+
+
+
+
+/* =====================================
+   CLOSE PROMO BANNER
+===================================== */
+
+
+function closeBanner(){
+
+    const banner = 
+    document.getElementById("promoBanner");
+
+    
+
+    banner.style.animation=
+    "slideDownFixed .5s ease forwards";
+
+    
+
+    setTimeout(()=>{
+
+        banner.style.display="none";
+
+        document.body.style.paddingBottom="0";
+
+    },500);
+
+    
+
+    localStorage.setItem(
+    "promoBannerClosed",
+    "true"
+    );
+
+}
+
+
+
+
+/* =====================================
+   CHECK IF BANNER WAS CLOSED
+===================================== */
+
+
+window.addEventListener("load",()=>{
+
+    const isClosed = 
+    localStorage.getItem("promoBannerClosed");
+
+    
+
+    if(isClosed){
+
+        const banner = 
+        document.getElementById("promoBanner");
+
+        banner.style.display="none";
+
+    }else{
+
+        document.body.style.paddingBottom=
+        "200px";
+
+    }
+
+});
+
+
+
+
+/* =====================================
    HERO SWIPER
 ===================================== */
 
